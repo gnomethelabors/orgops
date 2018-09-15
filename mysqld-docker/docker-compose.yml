@@ -1,0 +1,14 @@
+version: '3'
+services:
+  db:
+    container_name: mysqld
+    hostname: mysqld
+#    image: mysql:5.7
+    restart: always
+    build: ./mysqld57
+    ports:
+      - '${MYSQLD_PORT}:3306'
+    volumes:
+      - ./mysqld-data:/var/lib/mysql
+      - ./mysqld-logs:/var/log/mysqld
+

@@ -1,0 +1,24 @@
+*.bak
+*.swp
+*.tmp
+
+.cache/
+.tmp/
+
+build/
+
+# Node.js
+.node-version
+node_modules/
+
+# Ruby
+.ruby-version
+# Gemfile.lock
+# .ruby-gemset
+/.bundle
+/vendor/bundle
+/lib/bundler/man/
+
+## Sass
+.sass-cache/
+
